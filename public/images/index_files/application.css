@@ -1,0 +1,385 @@
+body {
+	height: 100%;
+	font-size: 13px;
+	font-family: Helvetica Neue;
+	font-weight: 500;
+	color: #899AAD;
+	line-height: 18px;
+	margin: 0;
+	position: relative;
+}
+
+h3 {
+	color: black;
+	cursor: pointer;
+}
+h3:hover{
+	color: #55ACEE;
+	text-decoration: underline;
+}
+
+
+div {
+	display: block;
+}
+
+header {
+	position: fixed !important;
+	width: 100%;
+	z-index: 10000;
+	background-color: white;
+}
+
+#topbar {
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	box-shadow: none;
+	height: 49px;
+	display: flex;
+	padding: 0 20;
+}
+
+.topbar-left {
+	float: left;
+	margin-right: 20px;
+	color: #66757f;
+	padding-top: 7px;
+}
+
+.icon-home {
+	height: 20px;
+	width: 20px;
+	color: #899AAD;
+}
+
+.icon-home, .icon-connect, .icon-discover, .icon-me{
+	padding-left: 25px;
+	color: #646973;
+	font-size: 20px;
+}
+.home:hover, .connect:hover, .discover:hover, .me:hover {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.icon-home:hover, .icon-connect:hover, .icon-discover:hover, .icon-me:hover{
+	color: blue;
+}
+
+.topbar-center img {
+	padding: 7px 200px 0 250px;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+}
+.topbar-right {
+	padding: 7px 0 10px 30px;
+}
+.search {
+	border-radius: 30px;
+	padding: 10px 89px 10px 2px;
+	background-color: #8899a6;
+	border: 0px;
+}
+.search input[type=placeholder] {
+	padding-left: 100px;
+	font-size: 12px;
+}
+
+#bg {
+	position: fixed;
+	top: -80%;
+	left: -200%;
+	width: 200%;
+	height: 225%;
+}
+#bg img {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+
+
+
+.dashboard {
+	position: absolute;
+	top: 60px;
+	left: 216px;
+	width: 290px;
+	height: 960px;
+	float: left;
+}
+.aside {
+	position: relative;
+	border-radius: 6px;
+	background-color: white;
+	margin-bottom: 10px;
+}
+.miniprofile {
+	font-size: 12px;
+	margin-bottom: 10px;
+	height: 250px;
+}
+
+
+.footer {
+	height: 130px;
+}
+
+.content-header {
+	font-size: 12px;
+	position: relative;
+	border-radius: 16px;
+	margin-bottom: 10px;
+	height: 250px;
+	background-color: white;
+}
+
+.account-summary {
+	height: 140px;
+	width: 100%;
+	top: 30px;
+	background-color: black;
+	display: block;
+	text-align: center;
+	border-radius: 6px 6px 0 0
+}
+.avatar {
+	height: 48px;
+	width: 48px;
+	border-radius: 3px;
+	border: solid white;
+	margin-top: 14px
+}
+.name {
+	font-size: 21px;
+	margin: 9px 0 8px 0;
+	font-weight: bold;
+}
+.screen-name{
+	font-size: 14px;
+	margin: 0;
+	font-size: 12px;
+}
+
+.profile-stats {
+	margin: -2px 0 3px 0;
+}
+.stats {
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+}
+.stats a{
+	text-transform: uppercase;
+	padding: 10px 10px 0 14px;
+	margin-top: 0px;
+	display: inline-block;
+	color: #999;
+	font-size: 10px;
+	font-weight: 400;
+}
+.stats a:hover{
+	color: #55ACEE;
+}
+
+.stats p{
+	font-size: 20px;
+	margin: 5px;
+	color: #0084B4;
+}
+
+.home-tweet-box {
+	padding: 10px 12px 10px 12px;
+	background-color: #E5F2F7;
+	border-radius: 0 0 6px 6px;
+	font-family: "Helvetica Neue";
+}
+.home-tweet-box input {
+	padding: 7px 95px 7px 7px;
+	box-shadow: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 12px;
+}
+
+
+.who-to-follow, .trends {
+	height: 290px;
+}
+.wtf-header {
+	position: absolute;
+	top: 13px;
+	left: 19px;
+	width: 250px;
+	margin-bottom: 10px;
+}
+.wtf-header h2, small, a {
+	display: inline;
+}
+.wtf-suggested-followers {
+	position: relative;
+	top: 44px;
+	height: 67px;
+}
+.wtf-suggested-followers .suggested-followers {
+	position: relative;
+	height: 67px;
+}
+.account-group {
+	position: relative;
+	bottom: 12px;
+	display: inline-block;
+}
+.user-action {
+	position: relative;
+	top: -9px;
+	height: 32px;
+	width: 180px;
+}
+.user-action input {
+	height: 30px;
+	width: 80px;
+	margin: -28px 0 0;
+	border: 1px solid #ccd6dd;
+	background: #f5f8fa;
+	border-radius: 4px;
+	cursor: pointer;
+	top: 20px;
+	position: relative;
+}
+.wtf-content-header {
+	position: relative;
+	top: -17px;
+	height: 20px;
+}
+.wtf-content-header h3{
+	top: -17px;
+}
+
+.wtf-footer {
+	position: relative;
+	height: 40px;
+	top: 49px;
+}
+.wtf-footer {
+	padding-left: 15px;
+}
+.content img {
+	height: 48px;
+	width: 48px;
+	padding: 13px 10px;
+}
+
+
+.aside-trends-header {
+	height: 35px;
+	padding: 10px;
+}
+.aside-trends-header h3,a{
+	position: relative;
+	margin: 0;
+	top: 0;
+	padding: 2px;
+	/*width: 55px;*/
+	display: inline;
+}
+.aside-trends-content ul {
+	list-style: none;
+	padding: 0 16px;
+	color: #55ACEE;
+	font-weight: 400;
+}
+.aside-trends-content li {
+	padding: 2px;
+}
+.aside-trends-content li:hover {
+	padding: 2px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.aside-footer-content {
+	position: relative;
+	top: 10px;
+	padding: 15px;
+	height: auto;
+}
+
+
+#main {
+	position: relative;
+}
+
+.main-content {
+	position: absolute;
+	top: 60px;
+	left: 517px;
+	width: 590px;
+	height: 800px;
+	float: right;
+	border-radius: 6px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.content-header {
+	position: relative;
+	padding: 12px;
+	font-size: 23px;
+	border: 1px solid #e1e8ed;
+	border-radius: 5px 5px 0 0;
+	height: 20px;
+	margin: 0;
+}
+h5 {
+	font-weight: 200;
+	font-size: 22px;
+	color: #66757f;
+	margin: 2px;
+}
+.content-stream {
+	border-bottom: 1px solid #e1e8ed;
+	background-color: white;
+	height: auto;
+	cursor: pointer;
+}
+.content-stream img {
+	height: 48px;
+	width: 48px;
+	padding: 13px 10px;
+}
+.content-stream-header {
+	position: relative;
+	bottom: 52px;
+	display: inline-block;
+}
+.content-tweet {
+	position: relative;
+	bottom: 40px;
+	display: inline-block;
+	left: 72px;
+	width: 500px;
+}
+.content-footer {
+	position: relative;
+	bottom: 24px;
+	left: 70px;
+}
+.content-footer a {
+	color: #0084B4;
+}
+.content-footer a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
